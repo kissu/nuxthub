@@ -11,7 +11,15 @@ export default defineNuxtConfig({
     'nuxt-auth-utils'
   ],
   hub: {
-    blob: true
+    database: true,
+    kv: true,
+    blob: true,
+    cache: true,
+  },
+  nitro: {
+    experimental: {
+      openAPI: true
+    }
   },
   experimental: {
     viewTransition: true
